@@ -54,12 +54,12 @@ burger.addEventListener('click', () => {
 
 const btnsIcecream = document.querySelectorAll('.about-us-btn__img')
 
-btnsIcecream.forEach(btn=>{
+btnsIcecream.forEach(btn => {
 	btn.addEventListener('click', () => {
-		btnsIcecream.forEach(btn=>{
+		btnsIcecream.forEach(btn => {
 			btn.classList.remove('about-us-btn--active')
 		})
-		
+
 		btn.classList.add('about-us-btn--active')
 	})
 })
@@ -88,11 +88,11 @@ document.querySelector('.question-accordion').addEventListener('click', (e) => {
 const btnUp = document.querySelector('.btn-up')
 
 btnUp.onclick = function () {
-	window.scrollTo(pageXOffset, 0);
-	console.log(1);
-	// после scrollTo возникнет событие "scroll", так что стрелка автоматически скроется
+	window.scrollTo({ top: 0, behavior: 'smooth' })
 };
 
-window.addEventListener('scroll', function () {
-	btnUp.hidden = (pageYOffset > document.documentElement.clientHeight);
+window.addEventListener('scroll', (event) => {
+	const y = scrollY;
+	if (y > 300) { btnUp.style.opacity = 1 }
+	else { btnUp.style.opacity = 0 };
 });
