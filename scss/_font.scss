@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+@font-face {
+	font-family: 'Iskra';
+	font-style: normal;
+	font-weight: 400;
+	src: local('IskraCYR'),
+		url('./../fonts/IskraCYR-Regular_1.woff') format('woff');
+		
+}
+
+@font-face {
+	font-family: 'Iskra';
+	font-style: normal;
+	font-weight: 500;
+	src: local('IskraCYR'),
+	url('./../fonts/IskraCYR-Medium_1.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Iskra';
+	font-style: normal;
+	font-weight: 700;
+	src: local('IskraCYR'),
+		url('./../fonts/IskraCYR-Bold_1.woff') format('woff');
+}
