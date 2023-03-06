@@ -1365,7 +1365,7 @@ html, body {
 		
 		&--active {
 			padding: 15px 0px 0px 0px;
-			max-height: 100%;
+			max-height: 100px;
 		}
 	}
 }
@@ -1594,6 +1594,10 @@ html, body {
 	color: $accent;
 	background-color: $white;
 	border-radius: 85px;
+}
+
+#message {
+	resize: none;
 }
 
 @media (max-width: 1280px) {
